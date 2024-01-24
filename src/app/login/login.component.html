@@ -1,0 +1,28 @@
+<div class="flex w-screen h-screen justify-center items-center">
+  <form (submit)="handleShowAllValues()" class="flex">
+    <div class="rounded bg-slate-300 border-2 border-slate-200">
+      <div class="m-3 flex flex-col bg-slate-300">
+        <div class="mt-2 flex flex-col">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="User Name" #name />
+        </div>
+
+        <div class="mt-2 flex flex-col">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Email" />
+        </div>
+
+        <div class="mt-2 flex flex-col">
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            #password
+          />
+        </div>
+        <button>login</button>
+      </div>
+    </div>
+  </form>
+</div>

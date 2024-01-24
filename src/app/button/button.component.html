@@ -1,0 +1,7 @@
+<button [disabled]="disable_buttons" (click)="handleChangeColor('red')" > red </button>
+<button [disabled]="disable_buttons" (click)="handleChangeColor('blue')" > blue </button>
+<button [disabled]="disable_buttons" (click)="handleChangeColor('orange')" > orange </button>
+
+<h3 [class]="text_color" >hi bro, this text will changed of color {{ text_color }} </h3>
+
+<button (click)="disable_buttons = !disable_buttons" >disable buttons</button>

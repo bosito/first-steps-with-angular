@@ -1,0 +1,10 @@
+<div class="flex w-screen h-screen">
+  <form (submit)="handleShowAllValues()" >
+    <div class="m-3 flex flex-col">
+      <input type="text" name="name" placeholder="User Name" #name />
+      <input type="email" name="email" placeholder="Email" #email />
+      <input type="text" name="password" placeholder="Password" #password />
+      <button (click)="handleShowValue(email.value)">login</button>
+    </div>
+  </form>
+</div>
